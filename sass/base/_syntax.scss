@@ -112,7 +112,7 @@ html .gist .gist-file {
 pre {
   background: $pre-bg $noise-bg;
   @include border-radius(.4em);
-  @extend .mono;
+  @extend .mono !optional;
   border: 1px solid $pre-border;
   line-height: 1.45em;
   font-size: 13px;
@@ -128,7 +128,7 @@ h3.filename {
 
 p, li {
   code {
-    @extend .mono;
+    @extend .mono !optional;
     display: inline-block;
     white-space: no-wrap;
     background: #fff;
